@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autoFill="clr-namespace:MAUIOTPReader.CustomControls"
+             x:Class="MAUIOTPReader.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label
+                Text="Received Msg will show here"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Start" />
+            
+            <autoFill:AutoFillEntry x:Name="AutoFillEntry" HeightRequest="70" FontSize="30" BackgroundColor="Silver" TextColor="Maroon"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
